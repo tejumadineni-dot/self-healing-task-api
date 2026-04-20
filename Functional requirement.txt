@@ -1,0 +1,61 @@
+FUNCTIONAL REQUIREMENT DOCUMENT
+Project: Task Management API
+
+
+1. OBJECTIVE
+The objective of this project is to develop a Task Management API that allows users to create, view, update, and delete tasks.
+
+2. SYSTEM DESCRIPTION
+The system is a backend API built using FastAPI which provides endpoints for managing tasks. It interacts with a database to store and retrieve task data.
+
+3. FUNCTIONAL REQUIREMENTS
+
+A. Create Task
+- The user should be able to create a new task
+- Input: title, description, completed status
+- Output: newly created task with ID
+
+B. View Tasks
+- The user should be able to view all tasks
+- Output: list of tasks
+
+C. Update Task
+- The user should be able to update an existing task
+- Input: task ID and updated details
+- Output: updated task
+
+D. Delete Task
+- The user should be able to delete a task
+- Input: task ID
+- Output: confirmation message
+
+4. NON-FUNCTIONAL REQUIREMENTS
+
+- The system should provide fast response time
+- The system should handle multiple requests
+- Proper error handling should be implemented
+- Logging should track API operations
+- The system should be easy to maintain
+
+5. ASSUMPTIONS
+
+- The user interacts with the system using API tools like Swagger
+- SQLite is used as the database
+- The system runs locally
+
+6. LIMITATIONS
+
+- No authentication system implemented
+- No frontend interface
+- Limited scalability in current version
+
+7. FUTURE ENHANCEMENTS
+
+- Add user authentication (login/signup)
+- Convert into microservices architecture
+- Integrate AI/ML features
+- Deploy the application to cloud
+
+8. CONCLUSION
+
+The system successfully meets the basic requirements of a task management API and can be extended with advanced features in future.

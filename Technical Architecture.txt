@@ -1,0 +1,64 @@
+TECHNICAL ARCHITECTURE DOCUMENT
+
+Project: Task Management API
+
+1. OVERVIEW
+
+This document describes the technical architecture of the Task Management API developed using FastAPI. The system is designed to handle CRUD operations with proper database integration, error handling, and logging.
+
+2. TECHNOLOGIES USED
+
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite
+- Uvicorn
+- Pydantic
+
+3. SYSTEM ARCHITECTURE
+
+The system follows a layered architecture:
+
+A. API Layer (FastAPI)
+Handles incoming HTTP requests and sends responses.
+
+B. Validation Layer (Pydantic)
+Validates request and response data.
+
+C. Database Layer (SQLAlchemy)
+Handles database operations like create, read, update, delete.
+
+D. Database (SQLite)
+Stores task data.
+
+4. DATA FLOW
+
+Client → FastAPI → Pydantic → SQLAlchemy → SQLite Database → Response
+
+5. API ENDPOINTS
+
+- POST /tasks → Create a new task
+- GET /tasks → Retrieve all tasks
+- PUT /tasks/{id} → Update task
+- DELETE /tasks/{id} → Delete task
+
+6. ERROR HANDLING
+
+Errors are handled using HTTPException to return proper status codes and messages.
+
+7. LOGGING
+
+Logging is implemented using Python logging module.
+It helps in tracking API operations and debugging errors.
+
+8. SCALABILITY
+
+The system can be scaled by converting it into microservices and deploying components independently.
+
+9. MODULARITY
+
+The project is structured in a modular way separating database, models, and API logic for better maintainability.
+
+10. CONCLUSION
+
+The architecture ensures clean design, maintainability, and scalability for future improvements.
