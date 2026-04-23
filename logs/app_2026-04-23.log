@@ -1,0 +1,83 @@
+2026-04-23 07:47:30,724 | INFO | self-healing-api | App started
+2026-04-23 07:47:31,825 | INFO | self-healing-api | App started
+2026-04-23 08:11:46,482 | INFO | self-healing-api | App started
+2026-04-23 08:14:29,685 | INFO | self-healing-api | App started
+2026-04-23 08:14:31,941 | INFO | self-healing-api | App started
+2026-04-23 08:16:40,327 | INFO | self-healing-api | App started
+2026-04-23 08:18:10,451 | INFO | self-healing-api | App started
+2026-04-23 08:18:11,931 | INFO | self-healing-api | App started
+2026-04-23 08:24:02,401 | INFO | self-healing-api | App started
+2026-04-23 08:33:24,262 | INFO | self-healing-api | App started
+2026-04-23 09:36:10,316 | INFO | N/A | self-healing-api | App started
+2026-04-23 09:39:07,242 | INFO | N/A | self-healing-api | App started
+2026-04-23 09:42:07,314 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 09:52:29,286 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 10:06:24,675 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 10:07:04,135 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 10:08:04,180 | INFO | a4c0c1ff-90bb-4d7d-b204-0f8a69558104 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/docs
+2026-04-23 10:08:04,180 | INFO | a4c0c1ff-90bb-4d7d-b204-0f8a69558104 | self-healing-api | Response status: 200
+2026-04-23 10:08:04,316 | INFO | 2e08ea2a-580d-4829-8b41-5fe86e211c57 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-04-23 10:08:04,329 | INFO | 2e08ea2a-580d-4829-8b41-5fe86e211c57 | self-healing-api | Response status: 200
+2026-04-23 10:08:21,204 | INFO | 371a8055-a6c2-45f3-97d5-32e8369ee15e | self-healing-api | Incoming request: GET http://127.0.0.1:8000/health
+2026-04-23 10:08:21,210 | ERROR | 371a8055-a6c2-45f3-97d5-32e8369ee15e | self-healing-api | Health check failed
+2026-04-23 10:08:21,215 | INFO | 371a8055-a6c2-45f3-97d5-32e8369ee15e | self-healing-api | Response status: 500
+2026-04-23 10:08:51,785 | INFO | 7316bca8-88af-42c8-8000-46ce570a3ed9 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/health
+2026-04-23 10:08:51,790 | ERROR | 7316bca8-88af-42c8-8000-46ce570a3ed9 | self-healing-api | Health check failed
+2026-04-23 10:08:51,793 | INFO | 7316bca8-88af-42c8-8000-46ce570a3ed9 | self-healing-api | Response status: 500
+2026-04-23 10:09:14,519 | INFO | fb89b187-248d-4dde-a804-c45696d27e8e | self-healing-api | Incoming request: GET http://127.0.0.1:8000/docs
+2026-04-23 10:09:14,522 | INFO | fb89b187-248d-4dde-a804-c45696d27e8e | self-healing-api | Response status: 200
+2026-04-23 10:09:14,640 | INFO | 49885b8b-4647-4538-8a00-3e05943c58e5 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-04-23 10:09:14,642 | INFO | 49885b8b-4647-4538-8a00-3e05943c58e5 | self-healing-api | Response status: 200
+2026-04-23 10:09:24,014 | INFO | d7d3f04c-958b-4bf0-85bc-44809e079cf1 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/health
+2026-04-23 10:09:24,014 | ERROR | d7d3f04c-958b-4bf0-85bc-44809e079cf1 | self-healing-api | Health check failed
+2026-04-23 10:09:24,018 | INFO | d7d3f04c-958b-4bf0-85bc-44809e079cf1 | self-healing-api | Response status: 500
+2026-04-23 10:11:20,700 | INFO | 8f2cc891-cd16-403b-b631-25be8c6ebce1 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/health
+2026-04-23 10:11:20,735 | ERROR | 8f2cc891-cd16-403b-b631-25be8c6ebce1 | self-healing-api | Health check failed
+2026-04-23 10:11:20,742 | INFO | 8f2cc891-cd16-403b-b631-25be8c6ebce1 | self-healing-api | Response status: 500
+2026-04-23 10:16:52,002 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 10:17:18,896 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 10:17:39,613 | INFO | 8b31ce37-ad4a-4ada-8ea3-1910ad3de3e8 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/docs
+2026-04-23 10:17:39,622 | INFO | 8b31ce37-ad4a-4ada-8ea3-1910ad3de3e8 | self-healing-api | Response status: 200
+2026-04-23 10:17:39,765 | INFO | 3bc3dbd8-54dc-4bfa-a583-a5d1930107b6 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-04-23 10:17:39,867 | INFO | 3bc3dbd8-54dc-4bfa-a583-a5d1930107b6 | self-healing-api | Response status: 200
+2026-04-23 10:17:45,039 | INFO | 30a6a3fe-a865-4539-8212-ca95a065b404 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/health
+2026-04-23 10:17:45,055 | ERROR | 30a6a3fe-a865-4539-8212-ca95a065b404 | self-healing-api | Health check failed: name 'text' is not defined
+2026-04-23 10:17:45,071 | INFO | 30a6a3fe-a865-4539-8212-ca95a065b404 | self-healing-api | Response status: 500
+2026-04-23 10:17:58,826 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 10:18:01,560 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 10:18:28,659 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 10:18:48,313 | INFO | 134be5d5-76f6-4930-9dad-9732dfcbeac4 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/docs
+2026-04-23 10:18:48,317 | INFO | 134be5d5-76f6-4930-9dad-9732dfcbeac4 | self-healing-api | Response status: 200
+2026-04-23 10:18:48,448 | INFO | 1ff11777-5552-4d82-aea3-6cf7f7739718 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-04-23 10:18:48,473 | INFO | 1ff11777-5552-4d82-aea3-6cf7f7739718 | self-healing-api | Response status: 200
+2026-04-23 10:18:50,037 | INFO | a0f01da5-a651-4b88-940d-eadd673e3d13 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/docs
+2026-04-23 10:18:50,038 | INFO | a0f01da5-a651-4b88-940d-eadd673e3d13 | self-healing-api | Response status: 200
+2026-04-23 10:18:50,138 | INFO | 15bc2131-7c31-495c-9291-4a8de2a06eb4 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-04-23 10:18:50,148 | INFO | 15bc2131-7c31-495c-9291-4a8de2a06eb4 | self-healing-api | Response status: 200
+2026-04-23 10:18:54,069 | INFO | 37bca041-f3d1-4f70-9694-ba505a4af92d | self-healing-api | Incoming request: GET http://127.0.0.1:8000/health
+2026-04-23 10:18:54,095 | ERROR | 37bca041-f3d1-4f70-9694-ba505a4af92d | self-healing-api | Health check failed: name 'text' is not defined
+2026-04-23 10:18:54,106 | INFO | 37bca041-f3d1-4f70-9694-ba505a4af92d | self-healing-api | Response status: 500
+2026-04-23 10:21:05,762 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 10:21:23,745 | INFO | N/A | self-healing-api |  Application started
+2026-04-23 10:21:29,956 | INFO | 6f1f5103-392a-4ebb-8ee3-0a6cc2ca2282 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/docs
+2026-04-23 10:21:29,961 | INFO | 6f1f5103-392a-4ebb-8ee3-0a6cc2ca2282 | self-healing-api | Response status: 200
+2026-04-23 10:21:30,058 | INFO | a6595559-b73d-45af-b11f-51a8361e5b0a | self-healing-api | Incoming request: GET http://127.0.0.1:8000/openapi.json
+2026-04-23 10:21:30,083 | INFO | a6595559-b73d-45af-b11f-51a8361e5b0a | self-healing-api | Response status: 200
+2026-04-23 10:21:35,513 | INFO | b8092103-1314-4b84-82f6-2fb84e379297 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/health
+2026-04-23 10:21:35,556 | INFO | b8092103-1314-4b84-82f6-2fb84e379297 | self-healing-api | Health check successful
+2026-04-23 10:21:35,560 | INFO | b8092103-1314-4b84-82f6-2fb84e379297 | self-healing-api | Response status: 200
+2026-04-23 10:23:10,037 | INFO | 676413fb-7818-4dac-abc3-093dbed06c67 | self-healing-api | Incoming request: POST http://127.0.0.1:8000/tasks
+2026-04-23 10:23:10,049 | INFO | 676413fb-7818-4dac-abc3-093dbed06c67 | self-healing-api | Creating task
+2026-04-23 10:23:10,096 | INFO | 676413fb-7818-4dac-abc3-093dbed06c67 | self-healing-api | Response status: 201
+2026-04-23 10:23:57,346 | INFO | 34f40a4d-770d-4fb4-9e43-ed5582986620 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/tasks?skip=0&limit=10
+2026-04-23 10:23:57,351 | INFO | 34f40a4d-770d-4fb4-9e43-ed5582986620 | self-healing-api | Fetching tasks | skip=0, limit=10
+2026-04-23 10:23:57,373 | INFO | 34f40a4d-770d-4fb4-9e43-ed5582986620 | self-healing-api | Response status: 200
+2026-04-23 10:25:15,349 | INFO | 13eeb532-8fba-4324-9258-ad3d1fcb4c15 | self-healing-api | Incoming request: PUT http://127.0.0.1:8000/tasks/1
+2026-04-23 10:25:15,355 | INFO | 13eeb532-8fba-4324-9258-ad3d1fcb4c15 | self-healing-api | Updating task 1
+2026-04-23 10:25:15,416 | INFO | 13eeb532-8fba-4324-9258-ad3d1fcb4c15 | self-healing-api | Response status: 200
+2026-04-23 10:25:38,560 | INFO | 1ba20c89-c513-4a6c-8c5f-ff28e1a7ddd3 | self-healing-api | Incoming request: DELETE http://127.0.0.1:8000/tasks/1
+2026-04-23 10:25:38,566 | INFO | 1ba20c89-c513-4a6c-8c5f-ff28e1a7ddd3 | self-healing-api | Deleting task 1
+2026-04-23 10:25:38,624 | INFO | 1ba20c89-c513-4a6c-8c5f-ff28e1a7ddd3 | self-healing-api | Response status: 200
+2026-04-23 10:27:01,505 | INFO | fbdf703f-ad0e-4297-8acd-e4b6aa5c6bc2 | self-healing-api | Incoming request: GET http://127.0.0.1:8000/tasks?skip=0&limit=10
+2026-04-23 10:27:01,508 | INFO | fbdf703f-ad0e-4297-8acd-e4b6aa5c6bc2 | self-healing-api | Fetching tasks | skip=0, limit=10
+2026-04-23 10:27:01,526 | INFO | fbdf703f-ad0e-4297-8acd-e4b6aa5c6bc2 | self-healing-api | Response status: 200
