@@ -1,6 +1,6 @@
 from app.database.db import SessionLocal
 
-#  Dependency (DB session provider)
+#  DATABASE DEPENDENCY (DB SESSION PROVIDER)
 def get_db():
     db = SessionLocal()
     try:

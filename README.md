@@ -1,137 +1,179 @@
-#  Task Management API (Self-Healing System)
+#  Task Management API (Self-Healing  System)
 
-##  Project Overview
-This project is a Task Management REST API built using FastAPI and SQLAlchemy.
-
-It is designed with a focus on production-level backend concepts such as modular architecture, self-healing retry mechanism, structured logging, and scalable API design.
-
-The system allows users to perform CRUD operations on tasks while ensuring stability even during failures.
+A production-style backend API built using FastAPI + SQLAlchemy.  
+This project focuses on modular architecture, logging, retry mechanism, and unit testing.
 
 ---
 
-##  Key Highlights
-- Production-style backend architecture
-- Self-healing retry mechanism for database failures
-- Structured logging with unique request ID tracking
-- Scalable API design using pagination
-- Clean modular code structure
+#  System Architecture
+
+Client (Postman / Frontend)  
+↓  
+FastAPI (main.py)  
+↓  
+Routes Layer  
+↓  
+Service Layer  
+↓  
+Database Layer   
+↓  
+Logging + Retry System  
+↓  
+Response
 
 ---
 
-##  Tech Stack
-- Python
-- FastAPI
-- SQLAlchemy
-- Pydantic
-- Uvicorn
-- SQLite
-- Logging module
+# 📁 Project Structure
+
+task-api/
+│
+├── app/
+│   ├── main.py
+│   ├── routes.py
+│   ├── schemas.py
+│   ├── logger.py
+│   ├── config.py
+│   │
+│   ├── services/
+│   │   └── task_service.py
+│   │
+│   ├── database/
+│       ├── db.py
+│       ├── models.py
+│       └── deps.py
+│
+├── test_task.py
+├── requirements.txt
+├── technical Architecture.txt
 
 ---
 
-##  How It Works
-Client → FastAPI → Routes → Database → Logging System  
-Each request is tracked, processed, and logged with a unique request ID. Retry logic handles database failures automatically.
+#  Tech Stack
+
+Python  
+FastAPI  
+SQLAlchemy  
+Pydantic  
+Uvicorn  
+Pytest
 
 ---
 
-##  System Design
-Client → FastAPI → Routes → Database  
-                     ↓  
-                  Logging System  
+#  Features
+
+- CRUD operations for tasks  
+- Service layer architecture  
+- Structured logging with request ID  
+- Retry mechanism for DB failures (self-healing)  
+- Pagination support  
+- Input validation using Pydantic  
+- Unit testing using pytest  
 
 ---
 
-##  Architecture
-- Routes layer (API endpoints)
-- Schemas layer (validation)
-- Database layer (models & connection)
-- Logging module (observability)
+#  Request Flow
+
+                ┌────────────────────────────┐
+                │   Client (Postman / UI)    │
+                └─────────────┬──────────────┘
+                              │
+                              ▼
+                ┌────────────────────────────┐
+                │     FastAPI (main.py)      │
+                │  Entry Point / App Layer   │
+                └─────────────┬──────────────┘
+                              │
+                              ▼
+                ┌────────────────────────────┐
+                │      Routes Layer          │
+                │  (API Endpoints Handler)   │
+                └─────────────┬──────────────┘
+                              │
+                              ▼
+                ┌────────────────────────────┐
+                │     Service Layer          │
+                │ (Business Logic Layer)     │
+                └─────────────┬──────────────┘
+                              │
+              ┌───────────────┴───────────────┐
+              ▼                               ▼
+   ┌────────────────────┐        ┌────────────────────┐
+   │  Logging System     │        │ Retry Mechanism    │
+   │ (Request Tracking)  │        │ (Self-Healing DB)  │
+   └─────────┬──────────┘        └─────────┬──────────┘
+             │                              │
+             └──────────────┬──────────────┘
+                            ▼
+                ┌────────────────────────────┐
+                │     Database Layer         │
+                │ (SQLAlchemy + SQLite)      │
+                └─────────────┬──────────────┘
+                              │
+                              ▼
+                ┌────────────────────────────┐
+                │        Response            │
+                │   JSON Output to Client    │
+                └────────────────────────────┘
+---
+
+#  Error Handling Strategy
+
+- Global exception handling  
+- Retry mechanism for database operations  
+- Structured logging for debugging  
 
 ---
 
-##  Error Handling Strategy
-- Retry mechanism for database operations
-- Centralized exception handling
-- Proper logging for debugging and monitoring
+#  Testing
+
+Run tests:
+
+pytest
+
+Expected output:
+
+1 passed
 
 ---
 
-##  What I Learned
-- Designing modular backend architecture
-- Implementing retry mechanism for fault tolerance
-- Writing scalable API structure
-- Using structured logging for production systems
+#  Run Project
+
+uvicorn app.main:app --reload
 
 ---
 
-##  Project Structure
-app/
-├── main.py
-├── routes.py
-├── schemas.py
-├── logger.py
-├── config.py
-├── database/
-│   ├── db.py
-│   ├── models.py
-│   ├── deps.py
+#  API Endpoints
+
+GET /health → Health check  
+POST /tasks → Create task  
+GET /tasks → Get all tasks  
+PUT /tasks/{id} → Update task  
+DELETE /tasks/{id} → Delete task  
 
 ---
 
-##  Setup Instructions
+#  What I Learned
 
-1. Create virtual environment  
-python -m venv venv  
-
-2. Activate environment  
-venv\Scripts\activate   (Windows)  
-source venv/bin/activate   (Mac/Linux)  
-
-3. Install dependencies  
-pip install fastapi uvicorn sqlalchemy pydantic pydantic-settings  
-
-4. Run application  
-uvicorn app.main:app --reload  
+- Backend architecture design (Service Layer)  
+- Logging system implementation  
+- Retry mechanism for fault tolerance  
+- Unit testing with pytest  
+- Clean modular coding practices  
 
 ---
 
-##  API Endpoints
+#  Future Improvements
 
-- GET /health → Health check  
-- POST /tasks → Create task  
-- GET /tasks → Get all tasks (pagination)  
-- PUT /tasks/{id} → Update task  
-- DELETE /tasks/{id} → Delete task  
-
----
-
-##  Testing
-- Swagger UI → /docs  
-- Manual API testing (POST/GET/PUT/DELETE)
+- JWT Authentication  
+- PostgreSQL integration  
+- Docker containerization  
+- CI/CD pipeline  
+- Cloud deployment  
 
 ---
 
-##  Future Improvements
-- JWT Authentication
-- PostgreSQL integration
-- Docker containerization
-- CI/CD pipeline
-- Cloud deployment (AWS / Render)
-- AI-based task prioritization
+#  Project Status
 
----
-
-##  Project Status
-✔ Completed  
-✔ Tested  
-✔ Ready for production-style deployment  
-
----
-
-##  Conclusion
-This project demonstrates a production-ready backend system built using FastAPI.
-
-It includes real-world engineering practices like fault tolerance, structured logging, modular architecture, and scalable API design.
-
-This is not just a CRUD project — it simulates how real backend systems are built in production environments.
+Completed  
+Tested 
+Production-style backend   
